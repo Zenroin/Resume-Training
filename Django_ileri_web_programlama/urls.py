@@ -22,6 +22,7 @@ from django.urls import path
 from core.views import index
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('core.urls')),
     path('', views.home, name='home'),
-    path('',index, name='index'),
+
 ]
