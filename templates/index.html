@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -160,23 +161,21 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Ana Sayfa</a>
+                    <a class="nav-link" href="{% url 'index' %}">Ana sayfa</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                        Ürünler
+                        Evler
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-laptop me-2"></i>Teknoloji</a></li>
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-tshirt me-2"></i>Moda</a></li>
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-book me-2"></i>Eğitim</a></li>
+                        <li><a class="dropdown-item" href="#"><i class=""></i>Daire</a></li>
+                        <li><a class="dropdown-item" href="#"><i class=""></i>Villa</a></li>
+                        <li><a class="dropdown-item" href="#"><i class=""></i>Bungalov</a></li>
                     </ul>
                 </li>
+
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Koleksiyon</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">İletişim</a>
+                    <a class="nav-link" href="contact">İletişim</a>
                 </li>
             </ul>
 
@@ -200,13 +199,6 @@
     </div>
 </nav>
 
-<!-- Bootstrap 5.3 JS ve Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
-</html>
-
-
 <!-- İçerik -->
 <div class="container mt-4">
     <h2 class="mb-4">Kiralanabilir Evler</h2>
@@ -216,14 +208,14 @@
     <!-- ÖRNEKLER: -->
     <!-- Sadece resim ve açıklamalar örnek olarak verilmiştir. -->
 
-    <div class="listing-card d-flex">
-        <img src="https://via.placeholder.com/220x150" class="listing-img me-3" alt="Ev 1">
-        <div class="listing-info">
-            <h5>3+1 Daire - Kadıköy</h5>
-            <div class="listing-price">18.000 TL / Aylık</div>
-            <p>Geniş balkonlu, deniz manzaralı, merkezi konumda modern daire.</p>
-        </div>
+<div class="listing-card d-flex">
+    <img src="3+1 kadıköy.png" class="listing-img me-3" alt="Ev 1">
+    <div class="listing-info">
+        <h5>3+1 Daire - Kadıköy</h5>
+        <div class="listing-price">18.000 TL / Aylık</div>
+        <p>Geniş balkonlu, deniz manzaralı, merkezi konumda modern daire.</p>
     </div>
+</div>
 
     <div class="listing-card d-flex">
         <img src="https://via.placeholder.com/220x150" class="listing-img me-3" alt="Ev 2">
